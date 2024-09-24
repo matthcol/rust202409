@@ -1,0 +1,7 @@
+# first project without Cargo
+*.exe
+*.pdb
+main
+
+# projects with Cargo
+/*/target/
