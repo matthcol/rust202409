@@ -1,8 +1,10 @@
-#[derive(Debug)]
-enum Color {
-    Green(u16),
-    Orange,
-    Red(f32, f32)
+use color::{string_to_color, Color, Dummy};
+// use color::*;
+
+mod color;
+
+fn _play_with_dummy(){
+    let _dum = Dummy::Dumb;
 }
 
 fn play_with_enum_color(){
@@ -25,8 +27,19 @@ fn play_with_enum_color(){
 
     // play with match
     match color {
-
+        _ => println!("dummy case")
     }
+
+    println!("Color with trait Display: {color}");
+
+    let opt_color = string_to_color("green");
+    if let Some(color) = opt_color {
+        println!("Color read: {color}");
+        let nb = color.to_numeric();
+        println!("Nb from color: {nb}")
+    }
+
+    
 }
 
 fn main() {

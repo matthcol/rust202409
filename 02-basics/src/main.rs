@@ -157,6 +157,12 @@ fn play_with_pattern_matching() {
     }
     println!();
 
+    // ranges: Range<T>, RangeInclusive<T>, RangeTo<T>, RangeFrom<T>, RangeFull
+    let _r1: Range<i32> = 1..22;
+    let _r2: std::ops::RangeInclusive<i32> = 1..=22;
+    let _r3: std::ops::RangeTo<i32> = ..22;
+    let _r4: std::ops::RangeFrom<i32> = 1..;
+    let _r5: std::ops::RangeFull = ..;
 
 }
 
