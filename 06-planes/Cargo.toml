@@ -1,0 +1,6 @@
+[package]
+name = "flightsimulator"
+version = "2024.0.0"
+edition = "2021"
+
+[dependencies]
